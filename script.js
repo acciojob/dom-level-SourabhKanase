@@ -1,15 +1,16 @@
-
-let levelele=document.getElementById("level");
+document.addEventListener("DOMContentLoaded",()=>{
+	let levelEle=document.getElementById("level");
 
 let level=1;
 while(true)
 	{
-	  if(level.tagName==="HTML")
+	  if(levelEle.tagName==="HTML")
 		{
 			break;
 		}
-		levelele=levelele.parentNode;
+		levelEle=levelEle.parentNode;
 		level++;
 	}
 
 alert(`The level of the element is:${level}`);
+});
